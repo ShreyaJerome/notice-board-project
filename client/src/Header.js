@@ -18,7 +18,7 @@ export default function Header() {
       credentials: "include",
       method: "POST",
     });
-    setUserInfo(null);
+    setUserInfo("");
   }
 
   const username = userInfo?.username;
@@ -38,7 +38,9 @@ export default function Header() {
         {username && (
           <>
             <Link to="/create">Create</Link>
-            <a onClick={logout}>Logout</a>
+            <Link to="/" onClick={logout}>
+              Logout
+            </Link>
           </>
         )}
         {!username && (
