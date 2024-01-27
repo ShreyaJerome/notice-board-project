@@ -10,8 +10,31 @@ import { UserContextProvider } from "./UserContext";
 import CreatePost from "./pages/CreatePost";
 import PostPage from "./pages/PostPage";
 import EditPost from "./pages/EditPost";
+import alanBtn from "@alan-ai/alan-sdk-web";
+import React, { useState, useEffect } from "react";
 
 function App() {
+  useEffect(() => {
+    alanBtn({
+      key: "e4dbb333ba867b546628c537798b0f282e956eca572e1d8b807a3e2338fdd0dc/stage",
+      onCommand: (commandData) => {
+        const scrollDistance = 500;
+        if (commandData.command === "scrollUp") {
+          window.scrollBy({
+            top: -scrollDistance,
+            behavior: "smooth",
+          });
+        } else if (commandData.command === "scrollDown") {
+          window.scrollBy({
+            top: scrollDistance,
+            behavior: "smooth",
+          });
+        } else if (commandData.command === "navigateHome") {
+          window.location.href = "http://localhost:3000/";
+        }
+      },
+    });
+  }, []);
   return (
     <UserContextProvider>
       <Routes>
