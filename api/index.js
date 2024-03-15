@@ -13,7 +13,6 @@ const fs = require("fs");
 
 const salt = bcrypt.genSaltSync(10);
 const secret = "hdsdhsjhdjhakjekrajejrhejeb";
-
 app.use(cors({ credentials: true, origin: "http://localhost:3000" }));
 app.use(express.json());
 app.use(cookieParser());

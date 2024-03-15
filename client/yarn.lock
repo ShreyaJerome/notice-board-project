@@ -12,6 +12,11 @@
   resolved "https://registry.npmjs.org/@adobe/css-tools/-/css-tools-4.3.1.tgz"
   integrity sha512-/62yikz7NLScCGAAST5SHdnjaDJQBDq0M2muyRTpf2VQhw6StBg2ALiu73zSJQ4fMVLA+0uBhBHAle7Wg+2kSg==
 
+"@alan-ai/alan-sdk-web@^1.8.54":
+  version "1.8.54"
+  resolved "https://registry.npmjs.org/@alan-ai/alan-sdk-web/-/alan-sdk-web-1.8.54.tgz"
+  integrity sha512-dcZBXMHkY8BBBO1xaZVdzkPhIh6bastvWjT6LrJrzDIoB7XwegxGtEonqBW0je6o7WBoGipNzEoiQi6F2r/+7w==
+
 "@alloc/quick-lru@^5.2.0":
   version "5.2.0"
   resolved "https://registry.npmjs.org/@alloc/quick-lru/-/quick-lru-5.2.0.tgz"
